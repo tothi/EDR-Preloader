@@ -4,4 +4,5 @@ namespace SafeRuntime {
 	void memcpy(void* dest, void* src, size_t length);
 	wchar_t towlower(wchar_t wc);
 	int wstring_compare_i(const wchar_t* s1, const wchar_t* s2);
+        void *memset(void* dest, int c, size_t count);
 };

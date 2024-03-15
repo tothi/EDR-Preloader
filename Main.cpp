@@ -1,8 +1,8 @@
-#include <Windows.h>
+#include <windows.h>
 #include <stdio.h>
-#include "Includes/Types.h"
-#include "Includes/SafeRuntime.h"
-#include "Includes/hde64.h"
+#include "includes/Types.h"
+#include "includes/SafeRuntime.h"
+#include "includes/hde64.h"
 
 static PTR_TABLE g_ptr_table = { 0 };
 

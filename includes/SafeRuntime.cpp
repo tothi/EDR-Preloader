@@ -1,4 +1,4 @@
-#include <Windows.h>
+#include <windows.h>
 #include "SafeRuntime.h"
 
 /*
@@ -54,4 +54,12 @@ int SafeRuntime::wstring_compare_i(const wchar_t* s1, const wchar_t* s2) {
 	} while (c1 == c2);
 
 	return (c1 < c2) ? -1 : (c1 > c2);
+}
+
+void *SafeRuntime::memset(void *dest, int c, size_t count) {
+        byte *ptr = (byte *)dest;
+        for(size_t i = 0; i < count; ++i) {
+                *(ptr++) = c;
+        }
+	return dest;
 }
